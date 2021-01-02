@@ -1,0 +1,38 @@
+﻿<Window x:Class="helloArrayList.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:helloArrayList"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="key" HorizontalAlignment="Left" Height="36" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" Margin="191,160,0,0" FontSize="24" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.05"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBlock HorizontalAlignment="Left" Margin="198,89,0,0" TextWrapping="Wrap" Text="Hashtable testing" VerticalAlignment="Top" FontSize="24"/>
+        <Button x:Name="add" Content="add" HorizontalAlignment="Left" Margin="520,115,0,0" VerticalAlignment="Top" Width="152" RenderTransformOrigin="0.5,0.5" Height="46" Click="add_Click" FontSize="20"/>
+        <Button x:Name="show" Content="show all" HorizontalAlignment="Left" Margin="520,253,0,0" VerticalAlignment="Top" Width="152" Height="46" Click="show_Click" FontSize="20"/>
+        <Button x:Name="remove" Content="remove" HorizontalAlignment="Left" Margin="520,181,0,0" VerticalAlignment="Top" Width="152" Height="46" Click="remove_Click" FontSize="20"/>
+        <TextBox x:Name="value" HorizontalAlignment="Left" Height="36" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" Margin="190,228,0,0" FontSize="24" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.05"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBlock HorizontalAlignment="Left" Margin="198,140,0,0" TextWrapping="Wrap" Text="key" VerticalAlignment="Top" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="198,210,0,0" TextWrapping="Wrap" Text="value" VerticalAlignment="Top" FontSize="16"/>
+
+    </Grid>
+</Window>
